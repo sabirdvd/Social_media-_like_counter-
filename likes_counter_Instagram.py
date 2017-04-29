@@ -1,5 +1,5 @@
 import json
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import urllib.request
 import sys
 import os
@@ -25,9 +25,9 @@ for photo in data['items']:
     i = i + 1
 print(likes)
 
-#plt.plot(list(range(1,len(likes)+1)), likes, 'ro-')
-#plt.axis([1, 20, 0, max(likes)])
-#plt.title('Evolution of {0} likes on Instagram'.format(user))
-#plt.savefig("{0}/likes_{0}.png".format(user))
-#plt.show()
+plt.plot(list(range(1,len(likes)+1)), likes, 'ro-')
+plt.axis([1, 20, 0, max(likes)])
+plt.title('Evolution of {0} likes on Instagram'.format(user))
+plt.savefig("{0}/likes_{0}.png".format(user))
+plt.show()
 
