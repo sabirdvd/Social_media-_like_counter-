@@ -5,7 +5,7 @@ import sys
 import os
 
 user = sys.argv[1]
-
+# change this line for other social media (json file)  
 url = 'https://instagram.com/{0}/media'.format(user)
 
 print(url)
